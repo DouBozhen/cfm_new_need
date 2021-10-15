@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/install
+
+Name: test_tcp_comm
+Description: Description of test_tcp_comm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -ltest_tcp_comm
+Requires: tcp_client protocol

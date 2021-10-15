@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yyy/Desktop/dbz/force_master_ws/src/path_planner/include/bezier_planner.h
+
+/home/yyy/Desktop/dbz/force_master_ws/src/path_planner/src/bezier_planner.cpp
+bezier_planner.h
+/home/yyy/Desktop/dbz/force_master_ws/src/path_planner/src/bezier_planner.h
+

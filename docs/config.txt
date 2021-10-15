@@ -1,0 +1,4 @@
+FtSensorIP:
+    192.168.1.1
+RobotArmIP: 
+    192.168.1.30

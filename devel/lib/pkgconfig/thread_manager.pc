@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/devel
+
+Name: thread_manager
+Description: Description of thread_manager
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lthread_manager
+Requires: 

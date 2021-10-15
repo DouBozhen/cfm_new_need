@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/include/handler.h
+string
+-
+
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/include/thread_base.h
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+pthread.h
+-
+
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/include/thread_work.h
+pthread.h
+-
+handler.h
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/include/handler.h
+thread_base.h
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/include/thread_base.h
+
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/src/thread_work.cpp
+stdio.h
+-
+stdlib.h
+-
+mutex
+-
+thread_work.h
+/home/yyy/Desktop/dbz/force_master_ws/src/thread_manager/src/thread_work.h
+

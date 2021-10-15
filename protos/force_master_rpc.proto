@@ -1,0 +1,98 @@
+syntax="proto3";
+package ForceMasterRpc;
+
+message JointPosition
+{
+    int32 joint_num = 1;
+    repeated double joint = 2;
+};
+
+message Level
+{
+    int32 level = 1;
+};
+
+message CartPosition
+{
+    double x = 1;
+    double y = 2;
+    double z = 3;
+    double a = 4;
+    double b = 5;
+    double c = 6;
+};
+
+message ResponseCartPosition
+{
+    ResponseCommon header = 1;
+    CartPosition position = 2;
+};
+
+message ResponseCommon
+{
+    bool is_successful = 1;
+    string error_str = 2;
+};
+
+message ResponseJointPosition
+{
+    ResponseCommon header = 1;
+    JointPosition position = 2;
+};
+
+message ResponseLevel
+{
+    ResponseCommon header = 1;
+    int32 level = 2;
+};
+
+message ResponseTrajectoryReconstructionInfo
+{
+    ResponseCommon header = 1;
+    TrajectoryReconstructionInfo info = 2;
+};
+
+message TrajectoryReconstructionInfo
+{
+    int32 repeated_count = 1;
+    int32 speed_ratio = 2;
+};
+
+message ResponseSensorStatus
+{
+    ResponseCommon header = 1;
+    bool status = 2;
+};
+
+enum MessageType
+{
+  None = 0;
+	Poweroff=1;
+	StartRobot=2;
+	CloseRobot=3;
+	GetSensorStatus=4;
+	TractionForce_SetLevel=5;
+	TractionForce_GetLevel=6;
+	TrajectoryReconstruction_Open=7;
+	TrajectoryReconstruction_Close=8;
+  TrajectoryReconstruction_SetInfo=9;
+	TrajectoryReconstruction_GetInfo=10;
+	TrajectoryReconstruction_Start=11;
+	TrajectoryReconstruction_End=12;
+	ImpedanceMotion_Open=13;
+	ImpedanceMotion_Close=14;
+	ImpedanceMotion_SetRangelevel=15;
+	ImpedanceMotion_GetRangelevel=16;
+	GetJointPosition=17;
+  GetCartPosition=18;
+  SetCartPosition=19;
+  HeartBeat = 20;
+TrajectoryReconstruction_SetSpeedRatio = 21;
+TrajectoryReconstruction_GetSpeedRatio = 22;
+TrajectoryReconstruction_SetRepeatCount = 23;
+TrajectoryReconstruction_GetRepeatCount = 24;
+RemotePulling_Open = 25;
+RemotePulling_Close = 26;
+OmegaPulling_Open = 27;
+OmegaPulling_Close = 28;
+};

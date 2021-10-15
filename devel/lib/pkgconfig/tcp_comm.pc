@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/devel
+
+Name: tcp_comm
+Description: Description of tcp_comm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -ltcp_comm
+Requires: protocol controller app_game_manage

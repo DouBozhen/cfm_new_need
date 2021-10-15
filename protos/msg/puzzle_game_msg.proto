@@ -1,0 +1,56 @@
+syntax = "proto3";
+package PuzzleGameMsg;
+
+message PlanarPoint
+{
+    float x = 1;
+    float y = 2;
+}
+
+message Unity2Ubuntu
+{
+  repeated PlanarPoint point_cut = 1;
+  repeated PlanarPoint point_center = 2;
+  repeated PlanarPoint point_target = 3;
+  repeated int32 data = 4;
+}
+
+enum TcpState
+{
+  TCP_HANG = 0;
+  TCP_UP = 1;
+  TCP_DOWN = 2;
+}
+
+enum GameResult
+{
+  GAMING = 0;
+  WIN = 1;
+  LOSE = 2;
+}
+
+enum GameReplayState
+{
+  PLAYING = 0;
+  BACK = 1;
+  REPLAY = 2;
+  PAUSE = 3;
+}
+
+enum GameDeviceType
+{
+   VR = 0;
+   SCREEN = 1;
+}
+
+message Ubuntu2Unity
+{
+    repeated float tcp_pose = 1;
+    float sensor_force_z = 3;
+    TcpState tcp_state = 2;
+    double game_length = 5;
+    GameResult game_result = 4;
+    float game_score = 6;
+    GameReplayState game_replay_state = 7;
+    GameDeviceType game_device = 8;
+}

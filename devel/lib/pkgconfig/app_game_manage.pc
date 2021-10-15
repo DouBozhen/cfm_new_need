@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/devel
+
+Name: app_game_manage
+Description: Description of app_game_manage
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lapp_game_manage
+Requires: protocol ur_driver tcp_client thread_manager algorithm device_manage force_control algorithm udp_client

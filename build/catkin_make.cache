@@ -1,0 +1,2 @@
+algorithm:app_game_manage:controller:device_manage:force_control:path_planner:protocol:tcp_client:tcp_comm:tcp_server:test_tcp_comm:test_ur_driver:thread_manager:udp_client:ur_driver
+-DCATKIN_DEVEL_PREFIX=/home/xxs/Desktop/dbz/force_master_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xxs/Desktop/dbz/force_master_ws/install -G Unix Makefiles

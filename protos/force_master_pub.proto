@@ -1,0 +1,26 @@
+syntax="proto3";
+package ForceMasterPub;
+
+message PublishData
+{
+    JointPosition joint = 1;
+    CartPose pose = 2;
+};
+
+message JointPosition
+{
+    int32 joint_num = 1;
+    repeated double joint = 2;
+};
+
+message CartPose
+{
+    double x = 1;
+    double y = 2;
+    double z = 3;
+    double a = 4;
+    double b = 5;
+    double c = 6;
+};
+
+

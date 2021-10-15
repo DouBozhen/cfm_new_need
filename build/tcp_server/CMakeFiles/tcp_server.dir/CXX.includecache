@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yyy/Desktop/dbz/force_master_ws/src/tcp_server/include/tcp_server.h
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+string
+-
+stdio.h
+-
+iostream
+-
+
+/home/yyy/Desktop/dbz/force_master_ws/src/tcp_server/src/tcp_server.cpp
+tcp_server.h
+/home/yyy/Desktop/dbz/force_master_ws/src/tcp_server/src/tcp_server.h
+

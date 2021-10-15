@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/devel
+
+Name: algorithm
+Description: Description of algorithm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lalgorithm
+Requires: 

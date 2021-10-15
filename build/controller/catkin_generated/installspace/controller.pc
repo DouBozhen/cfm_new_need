@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/install
+
+Name: controller
+Description: Description of controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lcontroller
+Requires: protocol ur_driver tcp_client thread_manager algorithm device_manage force_control algorithm app_game_manage udp_client device_manage

@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/devel
+
+Name: test_ur_driver
+Description: Description of test_ur_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: tcp_client ur_driver

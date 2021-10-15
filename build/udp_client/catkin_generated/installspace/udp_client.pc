@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/install
+
+Name: udp_client
+Description: Description of udp_client
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -ludp_client
+Requires: 

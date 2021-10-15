@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yyy/Desktop/dbz/force_master_ws/src/udp_client/include/udp_client.h
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+string
+-
+stdio.h
+-
+iostream
+-
+
+/home/yyy/Desktop/dbz/force_master_ws/src/udp_client/src/udp_client.cpp
+errno.h
+-
+cstring
+-
+unistd.h
+-
+string
+-
+sys/ipc.h
+-
+fcntl.h
+-
+udp_client.h
+/home/yyy/Desktop/dbz/force_master_ws/src/udp_client/src/udp_client.h
+

@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/devel
+
+Name: tcp_client
+Description: Description of tcp_client
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -ltcp_client
+Requires: 

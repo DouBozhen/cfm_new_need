@@ -1,0 +1,8 @@
+prefix=/home/yyy/Desktop/dbz/force_master_ws/install
+
+Name: ur_driver
+Description: Description of ur_driver
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lur_driver
+Requires: tcp_client thread_manager
